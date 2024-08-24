@@ -39,14 +39,4 @@ project_name/
    ```
 4. **Access the application:**
    Open your web browser and navigate to `http://localhost:3000`.
-
-  - **OLLAMA_API_KEY:** API key for your Ollama account
-  - **LLAMA_INDEX_API_KEY:** API key for your Llama-index account
-
-**Note:** Replace placeholders with your actual API keys and configuration values.
-
-### Additional Notes
-* **Data preparation:** Ensure that your PDF documents are in the appropriate format and location for your application to process them.
-* **Customization:** You can customize the application's behavior by modifying the frontend and backend code, as well as the AI models and parameters used.
-
-**For more detailed instructions and customization options, refer to the specific documentation of the technologies used in the project.**
+   
