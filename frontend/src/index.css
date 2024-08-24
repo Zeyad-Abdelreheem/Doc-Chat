@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --text_area_width: 600px;
+}
+
+* {
+  margin: 10px;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.chat-with-pdfs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  
+}
+
+.title h1{
+  color: #f1356d;
+  font-size: 38px;
+  border-radius: 10px; 
+  align-items: center;
+}
+
+
+.upload-pdf input[type="file"]::file-selector-button{
+  /* display: none; */
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  width: 70;
+  height: 50px; 
+  border-radius: 8px; 
+}
+/* .custom-file-upload {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  width: 450px;
+  height: 200px; 
+  border-radius: 8px; 
+} */
+
+
+.response-area textarea{
+width: 600px/*var(--text_area_width)*/;
+height: 300px;
+align-items: center;
+padding-right: 140px;
+border-radius: 10px;
+font-size: 20px;
+
+}
+.text-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text-input input{
+ 
+  font-size: 18px;
+  width: var(--text_area_width);
+  height: 50px; 
+  border-radius: 10px; 
+  align-items: center;
+}
+
+.submit-btn button.active{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  width: 80px;
+  height: 50px; 
+  border-radius: 10px; 
+  /* align-items: center; */
+}
+.submit-btn button.inactive{
+  background: #6c6c6c;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  width: 80px;
+  height: 50px; 
+  border-radius: 10px; 
+  /* align-items: center; */
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.You {
+  text-align: right;
+  margin-left: auto;
+
+}
+.message-You {
+  display: inline-block;
+  background-color: #a393eb;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: right;
+  margin-left: auto; 
+  margin-right: 0;
+  /* margin-left: auto; */
+  font-size: 18px;
+  float:right;
+}
+
+
+.Assistant {
+  text-align: left;
+  margin-right: auto;
+
+}
+.message-Assistant {
+  display: inline-block;
+  background-color: #f5c7f7;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: left;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px; /* Adjust the maximum height as needed */
+  overflow-y: scroll;
+  padding: 10px; /* Optional padding for spacing */
+}
+
+.message-container {
+  max-width: 80%; /* Adjust the maximum width as needed */
+  border-radius: 10px;
+  padding: 10px;
+}

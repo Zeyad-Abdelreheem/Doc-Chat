@@ -1,0 +1,21 @@
+FROM python:3.10.4
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+RUN curl -fsSL https://ollama.com/install.sh | sh
+
+COPY . .
+
+EXPOSE 8000
+
+RUN ollama serve & 
+
+RUN ollama pull "qwen:0.5b"
+
+# RUN ollama serve & 
+
+CMD ["python", "./Django_React_Langchain_Stream/manage.py", "runserver", "0.0.0.0:8000"]
+
+# CMD ["python", "./main.py"]
